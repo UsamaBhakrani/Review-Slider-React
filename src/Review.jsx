@@ -24,15 +24,18 @@ const Review = () => {
     });
   };
 
-  const nextReview = (index) => {
+  const nextReview = () => {
     setIndex((index) => {
       let newIndex = index + 1;
       return checkNumber(newIndex);
     });
   };
-  
-  const randomReview = (index) => {
-    third;
+
+  const randomReview = () => {
+    setIndex(() => {
+      let newIndex = Math.floor(Math.random() * reviews.length);
+      return checkNumber(newIndex);
+    });
   };
 
   return (
